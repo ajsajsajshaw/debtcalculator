@@ -1,0 +1,559 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="js_ajsajsajshaw.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Debt Calculator</title>
+  </head>
+  <body> 
+    <div id= leftbox> 
+      <div id=header>
+        <div class=ageboxes id=years>
+        </div>
+        <div class=textboxes>
+          years,
+        </div>
+        <div class=ageboxes id=days>
+        </div>
+        <div class=textboxes>
+          days,
+        </div>
+        <div class=ageboxes id=months>
+        </div>
+        <div class=textboxes>
+          months,
+        </div>
+        <div class=ageboxes id=minutes>
+        </div>
+        <div class=textboxes>
+          minutes old
+        </div>
+      </div>
+      <div id=calculation>
+        At age
+        <div id=totalage>
+        ________________,
+        </div> 
+        Avery Shaw has accrued 
+        <div id=totaldebt>
+        ________________
+        </div> of debt.
+      </div>
+      <div id = "clock" onload="currentTime()">
+      </div>
+    </div>
+
+    <div id= rightbox>
+      <div id= scale>
+        <div id=unit>
+        <div id= longline>
+          <h2>$0</h2>
+        </div>
+        </div>
+        <div id=unit>
+          <div id= longline>
+          </div>
+          </div>
+          <div id=unit>
+            <div id= longline>
+            </div>
+            </div>
+            <div id=unit>
+              <div id= longline>
+              </div>
+              </div>
+              <div id=unit>
+                <div id= longline>
+                </div>
+                </div>
+                <div id=unit>
+                  <div id= longline>
+                  </div>
+                  </div>
+                  <div id=unit>
+                    <div id= longline>
+                    </div>
+                    </div>
+                    <div id=unit>
+                      <div id= longline>
+                      </div>
+                      </div>
+                      <div id=unit>
+                        <div id= longline>
+                        </div>
+                        </div>
+                        <div id=unit>
+                          <div id= longline>
+                          </div>
+                          </div>
+                          <div id=unit>
+                            <div id= longline>
+                              <h2>$5,000</h2>
+                            </div>
+                            </div>
+                            <div id=unit>
+                              <div id= longline>
+                              </div>
+                              </div>
+                              <div id=unit>
+                                <div id= longline>
+                                </div>
+                                </div>
+                                <div id=unit>
+                                  <div id= longline>
+                                  </div>
+                                  </div>
+                                  <div id=unit>
+                                    <div id= longline>
+                                    </div>
+                                    </div>
+                                    <div id=unit>
+                                      <div id= longline>
+                                      </div>
+                                      </div>
+                                      <div id=unit>
+                                        <div id= longline>
+                                        </div>
+                                        </div>
+                                        <div id=unit>
+                                          <div id= longline>
+                                          </div>
+                                          </div>
+                                          <div id=unit>
+                                            <div id= longline>
+                                            </div>
+                                            </div>
+                                            <div id=unit>
+                                              <div id= longline>
+                                              </div>
+                                              </div>
+                                              <div id=unit>
+                                                <div id= longline>
+                                                  <h2>$10,000</h2>
+                                                </div>
+                                                </div>
+                                                <div id=unit>
+                                                  <div id= longline>
+                                                  </div>
+                                                  </div>
+                                                  <div id=unit>
+                                                    <div id= longline>
+                                                    </div>
+                                                    </div>
+                                                    <div id=unit>
+                                                      <div id= longline>
+                                                      </div>
+                                                      </div>
+                                                      <div id=unit>
+                                                        <div id= longline>
+                                                        </div>
+                                                        </div>
+                                                        <div id=unit>
+                                                          <div id= longline>
+                                                          </div>
+                                                          </div>
+                                                          <div id=unit>
+                                                            <div id= longline>
+                                                            </div>
+                                                            </div>
+                                                            <div id=unit>
+                                                              <div id= longline>
+                                                              </div>
+                                                              </div>
+                                                              <div id=unit>
+                                                                <div id= longline>
+                                                                </div>
+                                                                </div>
+                                                                <div id=unit>
+                                                                  <div id= longline>
+                                                                  </div>
+                                                                  </div>
+                                                                  <div id=unit>
+                                                                    <div id= longline>
+                                                                      <h2>$15,000</h2>
+                                                                    </div>
+                                                                    </div>
+                                                                    <div id=unit>
+                                                                      <div id= longline>
+                                                                      </div>
+                                                                      </div>
+                                                                      <div id=unit>
+                                                                        <div id= longline>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div id=unit>
+                                                                          <div id= longline>
+                                                                          </div>
+                                                                          </div>
+                                                                          <div id=unit>
+                                                                            <div id= longline>
+                                                                            </div>
+                                                                            </div>
+                                                                            <div id=unit>
+                                                                              <div id= longline>
+                                                                              </div>
+                                                                              </div>
+                                                                              <div id=unit>
+                                                                                <div id= longline>
+                                                                                </div>
+                                                                                </div>        <div id=unit>
+                                                                                  <div id= longline>
+                                                                                  </div>
+                                                                                  </div>
+                                                                                  <div id=unit>
+                                                                                    <div id= longline>
+                                                                                    </div>
+                                                                                    </div>
+                                                                                    <div id=unit>
+                                                                                      <div id= longline>
+                                                                                      </div>
+                                                                                      </div>
+                                                                                      <div id=unit>
+                                                                                        <div id= longline>
+                                                                                          <h2>$20,000</h2>
+                                                                                        </div>
+                                                                                        </div>
+                                                                                        <div id=unit>
+                                                                                          <div id= longline>
+                                                                                          </div>
+                                                                                          </div>
+                                                                                          <div id=unit>
+                                                                                            <div id= longline>
+                                                                                            </div>
+                                                                                            </div>
+                                                                                            <div id=unit>
+                                                                                              <div id= longline>
+                                                                                              </div>
+                                                                                              </div>
+                                                                                              <div id=unit>
+                                                                                                <div id= longline>
+                                                                                                </div>
+                                                                                                </div>
+                                                                                                <div id=unit>
+                                                                                                  <div id= longline>
+                                                                                                  </div>
+                                                                                                  </div>
+                                                                                                  <div id=unit>
+                                                                                                    <div id= longline>
+                                                                                                    </div>
+                                                                                                    </div>
+                                                                                                    <div id=unit>
+                                                                                                      <div id= longline>
+                                                                                                      </div>
+                                                                                                      </div>
+                                                                                                      <div id=unit>
+                                                                                                        <div id= longline>
+                                                                                                        </div>
+                                                                                                        </div>
+                                                                                                        <div id=unit>
+                                                                                                          <div id= longline>
+                                                                                                          </div>
+                                                                                                          </div>
+                                                                                                          <div id=unit>
+                                                                                                            <div id= longline>
+                                                                                                              <h2>$25,000</h2>
+                                                                                                            </div>
+                                                                                                            </div>
+                                                                                                            <div id=unit>
+                                                                                                              <div id= longline>
+                                                                                                              </div>
+                                                                                                              </div>
+                                                                                                              <div id=unit>
+                                                                                                                <div id= longline>
+                                                                                                                </div>
+                                                                                                                </div>
+                                                                                                                <div id=unit>
+                                                                                                                  <div id= longline>
+                                                                                                                  </div>
+                                                                                                                  </div>
+                                                                                                                  <div id=unit>
+                                                                                                                    <div id= longline>
+                                                                                                                    </div>
+                                                                                                                    </div>
+                                                                                                                    <div id=unit>
+                                                                                                                      <div id= longline>
+                                                                                                                      </div>
+                                                                                                                      </div>
+                                                                                                                      <div id=unit>
+                                                                                                                        <div id= longline>
+                                                                                                                        </div>
+                                                                                                                        </div>
+                                                                                                                        <div id=unit>
+                                                                                                                          <div id= longline>
+                                                                                                                          </div>
+                                                                                                                          </div>
+                                                                                                                          <div id=unit>
+                                                                                                                            <div id= longline>
+                                                                                                                            </div>
+                                                                                                                            </div>
+                                                                                                                            <div id=unit>
+                                                                                                                              <div id= longline>
+                                                                                                                              </div>
+                                                                                                                              </div>
+                                                                                                                              <div id=unit>
+                                                                                                                                <div id= longline>
+                                                                                                                                  <h2>$30,000</h2>
+                                                                                                                                </div>
+                                                                                                                                </div>
+                                                                                                                                <div id=unit>
+                                                                                                                                  <div id= longline>
+                                                                                                                                  </div>
+                                                                                                                                  </div>
+                                                                                                                                  <div id=unit>
+                                                                                                                                    <div id= longline>
+                                                                                                                                    </div>
+                                                                                                                                    </div>
+                                                                                                                                    <div id=unit>
+                                                                                                                                      <div id= longline>
+                                                                                                                                      </div>
+                                                                                                                                      </div>
+                                                                                                                                      <div id=unit>
+                                                                                                                                        <div id= longline>
+                                                                                                                                        </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div id=unit>
+                                                                                                                                          <div id= longline>
+                                                                                                                                          </div>
+                                                                                                                                          </div>
+                                                                                                                                          <div id=unit>
+                                                                                                                                            <div id= longline>
+                                                                                                                                            </div>
+                                                                                                                                            </div>
+                                                                                                                                            <div id=unit>
+                                                                                                                                              <div id= longline>
+                                                                                                                                              </div>
+                                                                                                                                              </div>
+                                                                                                                                              <div id=unit>
+                                                                                                                                                <div id= longline>
+                                                                                                                                                </div>
+                                                                                                                                                </div>
+                                                                                                                                                <div id=unit>
+                                                                                                                                                  <div id= longline>
+                                                                                                                                                  </div>
+                                                                                                                                                  </div>
+                                                                                                                                                  <div id=unit>
+                                                                                                                                                    <div id= longline>
+                                                                                                                                                      <h2>$35,000</h2>
+                                                                                                                                                    </div>
+                                                                                                                                                    </div>
+                                                                                                                                                    <div id=unit>
+                                                                                                                                                      <div id= longline>
+                                                                                                                                                      </div>
+                                                                                                                                                      </div>
+                                                                                                                                                      <div id=unit>
+                                                                                                                                                        <div id= longline>
+                                                                                                                                                        </div>
+                                                                                                                                                        </div>
+                                                                                                                                                        <div id=unit>
+                                                                                                                                                          <div id= longline>
+                                                                                                                                                          </div>
+                                                                                                                                                          </div>
+                                                                                                                                                          <div id=unit>
+                                                                                                                                                            <div id= longline>
+                                                                                                                                                            </div>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div id=unit>
+                                                                                                                                                              <div id= longline>
+                                                                                                                                                              </div>
+                                                                                                                                                              </div>
+                                                                                                                                                              <div id=unit>
+                                                                                                                                                                <div id= longline>
+                                                                                                                                                                </div>
+                                                                                                                                                                </div>
+                                                                                                                                                                <div id=unit>
+                                                                                                                                                                  <div id= longline>
+                                                                                                                                                                  </div>
+                                                                                                                                                                  </div>
+                                                                                                                                                                  <div id=unit>
+                                                                                                                                                                    <div id= longline>
+                                                                                                                                                                    </div>
+                                                                                                                                                                    </div>
+                                                                                                                                                                    <div id=unit>
+                                                                                                                                                                      <div id= longline>
+                                                                                                                                                                      </div>
+                                                                                                                                                                      </div>
+                                                                                                                                                                      <div id=unit>
+                                                                                                                                                                        <div id= longline>
+                                                                                                                                                                        </div>
+                                                                                                                                                                        <h2>$40,000</h2>
+                                                                                                                                                                        </div>
+                                                                                                                                                                        <div id=unit>
+                                                                                                                                                                          <div id= longline>
+                                                                                                                                                                          </div>
+                                                                                                                                                                          </div>
+                                                                                                                                                                          <div id=unit>
+                                                                                                                                                                            <div id= longline>
+                                                                                                                                                                            </div>
+                                                                                                                                                                            </div>
+                                                                                                                                                                            <div id=unit>
+                                                                                                                                                                              <div id= longline>
+                                                                                                                                                                              </div>
+                                                                                                                                                                              </div>
+                                                                                                                                                                              <div id=unit>
+                                                                                                                                                                                <div id= longline>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                </div>
+                                                                                                                                                                                <div id=unit>
+                                                                                                                                                                                  <div id= longline>
+                                                                                                                                                                                  </div>
+                                                                                                                                                                                  </div>
+                                                                                                                                                                                  <div id=unit>
+                                                                                                                                                                                    <div id= longline>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    </div>
+                                                                                                                                                                                    <div id=unit>
+                                                                                                                                                                                      <div id= longline>
+                                                                                                                                                                                      </div>
+                                                                                                                                                                                      </div>
+                                                                                                                                                                                      <div id=unit>
+                                                                                                                                                                                        <div id= longline>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                        </div>
+                                                                                                                                                                                        <div id=unit>
+                                                                                                                                                                                          <div id= longline>
+                                                                                                                                                                                          </div>
+                                                                                                                                                                                          </div>
+                                                                                                                                                                                          <div id=unit>
+                                                                                                                                                                                            <div id= longline>
+                                                                                                                                                                                              <h2>$45,000</h2>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
+                                                                                                                                                                                            <div id=unit>
+                                                                                                                                                                                              <div id= longline>
+                                                                                                                                                                                              </div>
+                                                                                                                                                                                              </div>
+                                                                                                                                                                                              <div id=unit>
+                                                                                                                                                                                                <div id= longline>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                                </div>
+                                                                                                                                                                                                <div id=unit>
+                                                                                                                                                                                                  <div id= longline>
+                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                  <div id=unit>
+                                                                                                                                                                                                    <div id= longline>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                    <div id=unit>
+                                                                                                                                                                                                      <div id= longline>
+                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                      <div id=unit>
+                                                                                                                                                                                                        <div id= longline>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                        <div id=unit>
+                                                                                                                                                                                                          <div id= longline>
+                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                          <div id=unit>
+                                                                                                                                                                                                            <div id= longline>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                            <div id=unit>
+                                                                                                                                                                                                              <div id= longline>
+                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                              <div id=unit>
+                                                                                                                                                                                                                <div id= longline>
+                                                                                                                                                                                                                  <h2>$50,000</h2>
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                <div id=unit>
+                                                                                                                                                                                                                  <div id= longline>
+                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                  <div id=unit>
+                                                                                                                                                                                                                    <div id= longline>
+                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                    <div id=unit>
+                                                                                                                                                                                                                      <div id= longline>
+                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                      </div>
+                                                                                                                                                                                                                      <div id=unit>
+                                                                                                                                                                                                                        <div id= longline>
+                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                        <div id=unit>
+                                                                                                                                                                                                                          <div id= longline>
+                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                          </div>
+                                                                                                                                                                                                                          <div id=unit>
+                                                                                                                                                                                                                            <div id= longline>
+                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                            <div id=unit>
+                                                                                                                                                                                                                              <div id= longline>
+                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                              </div>
+                                                                                                                                                                                                                              <div id=unit>
+                                                                                                                                                                                                                                <div id= longline>
+                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                <div id=unit>
+                                                                                                                                                                                                                                  <div id= longline>
+                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                  <div id=unit>
+                                                                                                                                                                                                                                    <div id= longline>
+                                                                                                                                                                                                                                      <h2>$55,000</h2>
+                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                    </div>
+
+      </div>
+      <div class="loans subsidizedloan" id="loan1">
+        <h1>Subsidized loan</h1>
+        <h3>$5,500.00 </h3>
+        
+      </div>
+      <div class="loans unsubsidizedloan" id="loan2">
+        <h1>unsubsidized loan</h1>
+        <h3>$2,000.00</h3>
+        <p><span>INTEREST:</span> 3.73%</p>
+      </div>
+      <div class="loans privateloan" id="mefa1">
+        <h1>private loans </h1>
+        <h3>$16,272.00 </h3>
+        <p> <span>INTEREST:</span> 4.250% </p>
+      </div>
+      <div class="loans subsidizedloan" id="loan1">
+        <h1>Subsidized loan</h1>
+        <h3>$5,500.00 </h3>
+      </div>
+      <div class="loans unsubsidizedloan" id="loan1">
+        <h1>unsubsidized loan</h1>
+        <h3>$2,000.00</h3>
+        <p><span>INTEREST:</span> 3.73%</p>
+      </div>
+      <div class="loans privateloan" id="loan1">
+        <h1>private loans </h1>
+        <h3>$9,111.00 </h3>
+        <p> <span>INTEREST:</span> 4.250% </p>
+      </div>
+      <div class="loans subsidizedloan" id="loan1">
+        <h1>Subsidized loan</h1>
+        <h3>$5,500.00 </h3>
+      </div>
+      <div class="loans unsubsidizedloan" id="loan1">
+        <h1>unsubsidized loan</h1>
+        <h3>$2,000.00</h3>
+        <p><span>INTEREST:</span> 3.73%</p>
+      </div>
+      <!-- <div class="loans privateloan" id="loan1">
+        <h1>private loans </h1>
+        <h3>$9,111.00 </h3>
+        <p> <span>INTEREST:</span> 4.250% </p>
+      </div> -->
+      
+ 
+
+    </div>
+    <div> id=
+
+    </div>
+    </body>
+    </html>
