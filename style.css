@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'AUTHENTIC Sans';
+    src: url('../fonts/AUTHENTIC-Sans.woff2') format('woff2'),
+         url('../fonts/AUTHENTIC-Sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#leftbox{
+    height: 100vh;
+    width: 40vw;
+    position: fixed;
+    background-color: black;
+    color: white;
+    float: left;
+}
+#scale{
+    height: 5400px;
+    width: 1px;
+    background-color: black;
+    margin-left:10vw;
+    float: left;
+}
+#unit{
+    height: 49px;
+    width: 1vw;
+    background-color: transparent;
+    float: left; }
+
+#longline{
+    height: 1px;
+    width: 1vw;
+    background-color: black;
+    float: left; 
+
+}
+
+h1{
+    font-weight: bold;
+    font-size: 12px;
+    font-family:Helvetica, sans-serif;
+    letter-spacing: 4px;
+    text-transform:uppercase;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+}
+
+h2{
+ margin-top: -10px;
+ font-size: 14px;
+ font-weight: normal;
+ float: right;
+ transform: translateX(-2vw);
+ font-family: Helvetica, sans-serif;
+ letter-spacing: 2px;
+
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    margin-left: 1vw;
+
+}
+span{
+    text-decoration: underline;
+    text-underline-offset: 1px;
+}
+p{
+    margin-left: 1vw;
+    margin-top: 1vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+
+}
+
+#rightbox{
+    height: 100vh;
+    width: 60vw;
+    color: black;
+    float: right;
+    font-size: 100px;
+    padding-top:10vh;
+}
+#header{
+    height: 5vh;
+    display: block;
+    padding-top:3vh;
+    padding-left: 3vw;
+
+    font-family: helvetica, sans-serif;
+}
+.ageboxes{
+    height: 20px;
+    width: 30px;
+    display: inline-block;
+    border: white 1px solid;
+    
+}
+.textboxes{
+    height: 20px;
+    display: inline-block;
+    
+}
+#old{
+    border: none;
+}
+#calculation{
+    margin: 50px;
+    margin-top: 20vh;
+    font-size: 30px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+
+}
+#totalage{
+    border: white 1px solid;
+    display: inline-block;
+}
+#totaldebt{
+    border: white 1px solid;
+    display: inline-block;
+}
+.loans{
+    width:30vw;
+    background-color: black;
+    height:200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    padding: 10px;
+    font-family:Helvetica, sans-serif;
+    border-radius: 20px;
+
+
+}
+.subsidizedloan{
+    background-color: rgb(170, 0, 105);
+    height: 550px;
+    color: white;
+
+
+}
+.unsubsidizedloan{
+    background-color:rgb(26, 21, 92);
+    height:200px;
+    color: white;
+}
+.privateloan{
+    background-color:rgb(36, 109, 99);
+    height: 911px;
+    COLOR:WHITE;
+}
+#mefa1{
+    height: 1627.2px;
+    background-color: orange;
+}
+#clock{
+    height: 10vh;
+    color: white;
+}
+
