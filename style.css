@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
+}
+body{ background-color: white;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 12px;
+
 }
 @font-face {
     font-family: 'AUTHENTIC Sans';
@@ -9,6 +18,27 @@
     font-weight: normal;
     font-style: normal;
 }
+#visualkey{
+    height: 20vh;
+    width: 40vw;
+    position: fixed;
+    background-color: transparent;
+    float: left;
+}
+.colorbox{
+    width: 40px;
+    height: 40px; 
+    background-color: rgb(227, 81, 81);;
+    margin: 10px;
+    margin-left:8vw;
+}
+.keytextbox{
+    width: 20vw;
+    height: 40px; 
+    margin-left:13vw;
+    float: left;
+
+}
 #leftbox{
     height: 100vh;
     width: 40vw;
@@ -16,6 +46,10 @@
     background-color: black;
     color: white;
     float: left;
+    box-shadow: 0px -2px 30px black;
+}
+#redtextbox{
+    background-color:transparent;
 }
 #scale{
     height: 5400px;
@@ -41,7 +75,8 @@
 h1{
     font-weight: bold;
     font-size: 12px;
-    font-family:Helvetica, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
     letter-spacing: 4px;
     text-transform:uppercase;
     margin-top: 1vh;
@@ -55,25 +90,30 @@ h2{
  font-weight: normal;
  float: right;
  transform: translateX(-2vw);
- font-family: Helvetica, sans-serif;
+ font-family: 'IBM Plex Mono', monospace;
+ font-weight: 00;
  letter-spacing: 2px;
 
 }
 h3{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
     font-size: 30px;
     margin-left: 1vw;
 
 }
 span{
-    text-decoration: underline;
-    text-underline-offset: 1px;
+font-weight: 700;
 }
 p{
     margin-left: 1vw;
     margin-top: 1vh;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.8;
+    color: black;
+    font-weight: 400;
 
 }
 
@@ -91,7 +131,8 @@ p{
     padding-top:3vh;
     padding-left: 3vw;
 
-    font-family: helvetica, sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
 }
 .ageboxes{
     height: 20px;
@@ -110,19 +151,25 @@ p{
 }
 #calculation{
     margin: 50px;
-    margin-top: 20vh;
+    margin-top: 10vh;
     font-size: 30px;
     margin-left: 8vw;
     margin-right: 8vw;
+        font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-weight: lighter;
+    line-height: 2;
 
 }
 #totalage{
     border: white 1px solid;
     display: inline-block;
+    line-height: 1;
 }
 #totaldebt{
     border: white 1px solid;
     display: inline-block;
+    line-height: 1;
 }
 .loans{
     width:30vw;
@@ -138,7 +185,7 @@ p{
 
 }
 .subsidizedloan{
-    background-color: rgb(170, 0, 105);
+    background-color: rgb(227, 81, 81);
     color: white;
 }
 
@@ -166,14 +213,21 @@ p{
 #AH{ height:200px;}
 
 .unsubsidizedloan{
-    background-color:rgb(26, 21, 92);
+    background-color:rgb(0, 208, 158);
     height:200px;
     color: white;
 }
 .privateloan{
-    background-color:rgb(36, 109, 99);
+    background-color:rgb(101, 125, 214);
     height: 911px;
     COLOR:WHITE;
+}
+#green{
+    background-color:rgb(0, 208, 158);
+}
+#blue{
+    background-color:rgb(101, 125, 214);
+
 }
 #mefa1{
     height: 1627.2px;
