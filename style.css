@@ -126,7 +126,7 @@ p{
 }
 .loans{
     width:30vw;
-    background-color: black;
+
     height:200px;
     margin-left: auto;
     margin-right: auto;
@@ -139,11 +139,32 @@ p{
 }
 .subsidizedloan{
     background-color: rgb(170, 0, 105);
-    height: 550px;
     color: white;
-
-
 }
+
+#AA{
+    height: 350px;
+}
+#AB{
+    height: 200px;
+}
+#AC{
+    height: 450px;
+}
+#AD{ height: 200px;
+}
+
+#AE
+{height:550px;}
+
+#AF{
+    height: 200px;}
+
+#AG{
+    height: 550px;
+}
+#AH{ height:200px;}
+
 .unsubsidizedloan{
     background-color:rgb(26, 21, 92);
     height:200px;
@@ -156,7 +177,6 @@ p{
 }
 #mefa1{
     height: 1627.2px;
-    background-color: orange;
 }
 #clock{
     height: 10vh;
